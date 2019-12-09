@@ -65,10 +65,9 @@ Unless you have a static public IP address, this is probably the most reliable w
 5. That's it :) 
 
 #####Test on:
-
-Ubuntu 19.10
-Debian 10
-Centos 7.6
+* Ubuntu 19.10
+* Debian 10
+* Centos 7.6
 
 #####Miscellaneous:
 * New features and code improvements are welcomed
