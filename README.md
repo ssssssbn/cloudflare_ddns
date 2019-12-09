@@ -61,7 +61,7 @@ Unless you have a static public IP address, this is probably the most reliable w
 1. Download and place the ```cloudflare_ddns.py```, ```cloudflare_api.py```, ```logger.py``` and ```cloudflare_ddns.conf``` files somewhere on your server (e.g. ```/usr/local/bin/``` or ```~/```). 
 2. Open the ```cloudflare_ddns.conf``` file in a text editor and specify your email address, API key, domain name, host name, record type and a way to get IPv4/6.
 3. Set +x permission to the script for your user by running ```chmod +x /PATH_TO_FILE/cf-ddns.py```
-~~~4. Run ```crontab -e``` and append this line to it: ```*/5 * * * * /PATH_TO_FILE/cf-ddns.py >/dev/null 2>&1```. be sure to change the path to match your setup.~~
+~~4. Run ```crontab -e``` and append this line to it: ```*/5 * * * * /PATH_TO_FILE/cf-ddns.py >/dev/null 2>&1```. be sure to change the path to match your setup.~~
 5. That's it :) 
 
 #####Test on:
