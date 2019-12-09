@@ -4,7 +4,7 @@
 Unless you have a static public IP address, this is probably the most reliable way to ensure your servers are always accessible to you over the Internet.
 
 #####Features:
-* Supports IPv4 and IPv6 records (A, AAAA)
+* Supports IPv4/6(A/AAAA) and CNAME records 
 * Supports multiple domains with multiple hosts per domain
 * Simultaneous IPv4 and IPv6 support for single host
 * No third party libraries used. Only standard python libs.
@@ -35,7 +35,7 @@ Unless you have a static public IP address, this is probably the most reliable w
        }, 
        "content": "", # Set for CNAME type, blank it to update the root domain name
        "proxied": false, # Set it True to make the Cloudflare icon orange(using Cloudflare proxy)
-       "ttl": 1, # TTL is only valid in 1, 120, 300, 600, 900, 1800, 3600, 7200, 18000, 43200, 86400(in second)
+       "ttl": 1, # TTL is only valid in 1, 120, 300, 600, 900, 1800, 3600, 7200, 18000, 43200, 86400 (in second)
        "type": "RECORD_TYPE_HERE e.g. A/AAAA/CNAME" # Support A / AAAA / CNAME type, Required
       }
      ], 
@@ -61,7 +61,7 @@ Unless you have a static public IP address, this is probably the most reliable w
 1. Download and place the ```cloudflare_ddns.py```, ```cloudflare_api.py```, ```logger.py``` and ```cloudflare_ddns.conf``` files somewhere on your server (e.g. ```/usr/local/bin/``` or ```~/```). 
 2. Open the ```cloudflare_ddns.conf``` file in a text editor and specify your email address, API key, domain name, host name, record type and a way to get IPv4/6.
 3. Set +x permission to the script for your user by running ```chmod +x /PATH_TO_FILE/cf-ddns.py```
-~~4. Run ```crontab -e``` and append this line to it: ```*/5 * * * * /PATH_TO_FILE/cf-ddns.py >/dev/null 2>&1```. be sure to change the path to match your setup.~~
+4. ~~Run ```crontab -e``` and append this line to it: ```*/5 * * * * /PATH_TO_FILE/cf-ddns.py >/dev/null 2>&1```. be sure to change the path to match your setup.~~
 5. That's it :) 
 
 #####Test on:
